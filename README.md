@@ -11,9 +11,7 @@ _js, css, md, html_
 _Fill out the form and submit!_
 
 ## Specifications
-_* Spec #1: The program should display pizza order_
-  * Example Input:
-  * Example Output:
+_* This program will calculate attributes of the form submitted in order to output the correct pricing for the pizza order, adding together both the price of the size selected as well as the number of toppings added.
 
 ## Author
 _April Peng_
