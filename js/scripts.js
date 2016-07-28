@@ -1,27 +1,25 @@
 //business logic
 function Pizza(size, toppings) {
   this.size = size;
-  this.toppings = [];
+  this.toppings = toppings;
 }
 
 Pizza.prototype.addToTotalCost = function()  {
   return (this.toppings + this.size);
-  alert("hi");
 }
 
 
 //user interface logic
 $(function() {
-  var newPizza = new Pizza();
 
   $("#submit").click(function() {
     var size = parseInt($("#size").val());
-    console.log(size);
+    //console.log(size);
     if (size === 1) {
-      this.size = 6;
+      size = 6;
     }
     if (size === 2) {
-      this.size = 8;
+      size = 8;
     }
 
     var toppings = document.getElementsByTagName("input"),
@@ -29,14 +27,19 @@ $(function() {
     for (var i=0; i<toppings.length; i++) {
       if (toppings[i].type === "checkbox" && toppings[i].checked === true) {
         count++;
+
       }
     }
-    console.log(count);
-    this.toppings = count * 0.5
+    //console.log(count);
+    toppings = count * 0.5
+
+    var newPizza = new Pizza(size, toppings);
 
     newPizza.cost = newPizza.addToTotalCost();
-    $("#pizza-cost").text("Alright, brother - Great selections! Your total comes to " + newPizza.cost + "! Your insanely hot, delicious pizza will be ready for pickup and hearty consumption in 15 minutes!")
-    
+    var finalCost = newPizza.cost.toFixed(2)
+    $("#pizza-cost").text("Alright, brother - Great selections! Your total comes to $" + finalCost + "! Your insanely hot, delicious pizza will be ready for pickup and hearty consumption in 15 minutes!")
+    $("#pizza-order-img").show();
+
   });
 
 });

@@ -1,0 +1,17 @@
+#submit {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44)), rgba(0,0,0,0.44) url("../img/pizza-header.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  border-radius: 0;
+  padding: 75px 0 125px 0;
+}
+
+#pizza-order-img {
+  display: none;
+}
