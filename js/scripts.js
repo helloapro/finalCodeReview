@@ -15,12 +15,6 @@ $(function() {
   $("#submit").click(function() {
     var size = parseInt($("#size").val());
     //console.log(size);
-    if (size === 1) {
-      size = 6;
-    }
-    if (size === 2) {
-      size = 8;
-    }
 
     var toppings = document.getElementsByTagName("input"),
     count = 0;
