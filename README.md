@@ -31,7 +31,7 @@ Additional specs to add in future:
 May put cheese selector in a separate section once final pricing is decided. That may not be an item to charge as a topping...
 
 ## Website Address
-_helloapro.github.io/finalCodeReview/_
+[helloapro.github.io/finalCodeReview]
 
 ## Author
 _April Peng_
